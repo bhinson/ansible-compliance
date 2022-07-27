@@ -1,0 +1,7 @@
+---
+
+- name: Trigger compliance failure
+  hosts: all
+  roles:
+    - role: fail-the-telnet
+

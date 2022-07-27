@@ -1,0 +1,7 @@
+---
+
+- name: Payment Card Industry Data Security Standard
+  hosts: all
+  roles:
+    - role: pci
+

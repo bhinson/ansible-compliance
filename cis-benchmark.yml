@@ -1,0 +1,7 @@
+---
+
+- name: CIS Benchmark
+  hosts: all
+  roles:
+    - role: ansible-role-rhel7-c2s
+

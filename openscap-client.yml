@@ -1,0 +1,7 @@
+---
+
+- name: OpenSCAP client
+  hosts: all
+  roles:
+    - role: openscap-client
+

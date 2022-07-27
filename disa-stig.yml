@@ -1,0 +1,7 @@
+---
+
+- name: DISA Security Technical Implementation Guide (STIG)
+  hosts: all
+  roles:
+    - role: ansible-role-rhel7-stig
+

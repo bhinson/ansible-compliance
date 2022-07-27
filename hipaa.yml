@@ -1,0 +1,7 @@
+---
+
+- name: Health Insurance Portability and Accountability Act
+  hosts: all
+  roles:
+    - role: hipaa
+

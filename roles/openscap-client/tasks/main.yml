@@ -1,0 +1,20 @@
+---
+- name: Install OpenSCAP client
+  yum:
+    name: rubygem-foreman_scap_client
+    state: present
+
+- name: Copy configuration file
+  template:
+    src: config.yaml
+    dest: /etc/foreman_scap_client/config.yaml
+
+- name: Schedule daily reports through cron
+  template:
+    src: foreman_scap_client_cron
+    dest: /etc/cron.d/foreman_scap_client_cron
+#
+##TODO: Ensure client has OpenSCAP capsule set in Satellite host config
+
+- name: Create initial OpenSCAP report
+  command: /usr/bin/foreman_scap_client 1

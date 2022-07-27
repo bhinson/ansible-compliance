@@ -1,0 +1,2 @@
+satellite_hostname: satellite.home
+openscap_profile: xccdf_org.ssgproject.content_profile_ospp-rhel7-server

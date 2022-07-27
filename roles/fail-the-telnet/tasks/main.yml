@@ -1,0 +1,5 @@
+---
+- name: Install Telnet to break compliance profile
+  yum:
+    name: telnet
+    state: present
